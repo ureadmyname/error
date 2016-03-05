@@ -1,0 +1,24 @@
+An error occurred:
+
+readyState: 4
+getResponseHeader: function (e){var t;if(2===b){if(!o){o={};while(t=ic.exec(s))o[t[1].toLowerCase()]=t[2]}t=o[e.toLowerCase()]}return null==t?null:t}
+getAllResponseHeaders: function (){return 2===b?s:null}
+setRequestHeader: function (e,t){var n=e.toLowerCase();return b||(e=y[n]=y[n]||e,g[e]=t),this}
+overrideMimeType: function (e){return b||(c.mimeType=e),this}
+statusCode: function (e){var t;if(e)if(2>b)for(t in e)m[t]=[m[t],e[t]];else S.always(e[S.status]);return this}
+abort: function (e){var t=e||w;return r&&r.abort(t),T(0,t),this}
+state: function (){return r}
+always: function (){return s.done(arguments).fail(arguments),this}
+then: function (){var e=arguments;return n.Deferred(function(r){n.each(t,function(t,o){var u=n.isFunction(e[t])&&e[t];s[o[1]](function(){var e=u&&u.apply(this,arguments);e&&n.isFunction(e.promise)?e.promise().done(r.resolve).fail(r.reject).progress(r.notify):r[o[0]+"With"](this===i?r.promise():this,u?[e]:arguments)})}),e=null}).promise()}
+promise: function (e){return null!=e?n.extend(e,i):i}
+pipe: function (){var e=arguments;return n.Deferred(function(r){n.each(t,function(t,o){var u=n.isFunction(e[t])&&e[t];s[o[1]](function(){var e=u&&u.apply(this,arguments);e&&n.isFunction(e.promise)?e.promise().done(r.resolve).fail(r.reject).progress(r.notify):r[o[0]+"With"](this===i?r.promise():this,u?[e]:arguments)})}),e=null}).promise()}
+done: function (){if(a){var r=a.length;!function u(t){n.each(t,function(t,r){var i=n.type(r);"function"===i?e.unique&&c.has(r)||a.push(r):r&&r.length&&"string"!==i&&u(r)})}(arguments),i?o=a.length:t&&(s=r,l(t))}return this}
+fail: function (){if(a){var r=a.length;!function u(t){n.each(t,function(t,r){var i=n.type(r);"function"===i?e.unique&&c.has(r)||a.push(r):r&&r.length&&"string"!==i&&u(r)})}(arguments),i?o=a.length:t&&(s=r,l(t))}return this}
+progress: function (){if(a){var r=a.length;!function u(t){n.each(t,function(t,r){var i=n.type(r);"function"===i?e.unique&&c.has(r)||a.push(r):r&&r.length&&"string"!==i&&u(r)})}(arguments),i?o=a.length:t&&(s=r,l(t))}return this}
+complete: function (){if(a){var r=a.length;!function u(t){n.each(t,function(t,r){var i=n.type(r);"function"===i?e.unique&&c.has(r)||a.push(r):r&&r.length&&"string"!==i&&u(r)})}(arguments),i?o=a.length:t&&(s=r,l(t))}return this}
+success: function (){if(a){var r=a.length;!function u(t){n.each(t,function(t,r){var i=n.type(r);"function"===i?e.unique&&c.has(r)||a.push(r):r&&r.length&&"string"!==i&&u(r)})}(arguments),i?o=a.length:t&&(s=r,l(t))}return this}
+error: function (){if(a){var r=a.length;!function u(t){n.each(t,function(t,r){var i=n.type(r);"function"===i?e.unique&&c.has(r)||a.push(r):r&&r.length&&"string"!==i&&u(r)})}(arguments),i?o=a.length:t&&(s=r,l(t))}return this}
+responseText: {"data": ["author is required"], "meta": {}, "status": "requestError", "time": 4.452943801879883}
+responseJSON: [object Object]
+status: 400
+statusText: BAD REQUEST
